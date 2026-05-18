@@ -11,6 +11,7 @@ const counters = document.querySelectorAll("[data-count]");
 const magneticItems = document.querySelectorAll(".magnetic");
 const tiltCards = document.querySelectorAll(".tilt");
 const typedRole = document.querySelector(".typed-role");
+const problemForm = document.querySelector(".problem-form");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const savedTheme = localStorage.getItem("portfolio-theme");
 const roles = ["Web Developer", "AI Engineer", "MERN Stack Developer", "Java Programmer", "Problem Solver"];
@@ -177,6 +178,58 @@ const counterObserver = new IntersectionObserver(
 
 counters.forEach((counter) => counterObserver.observe(counter));
 
+problemForm?.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  const submitButton = problemForm.querySelector('button[type="submit"]');
+  const status = problemForm.querySelector(".form-status");
+  const formData = new FormData(problemForm);
+
+  problemForm.classList.remove("is-success", "is-error");
+  problemForm.classList.add("is-sending");
+
+  if (submitButton) {
+    submitButton.textContent = "Sending...";
+    submitButton.disabled = true;
+  }
+
+  if (status) {
+    status.textContent = "Sending your request...";
+  }
+
+  try {
+    const response = await fetch(problemForm.action, {
+      method: "POST",
+      body: formData,
+      headers: { Accept: "application/json" },
+    });
+
+    if (!response.ok) {
+      throw new Error("Form submission failed");
+    }
+
+    problemForm.reset();
+    problemForm.classList.add("is-success");
+
+    if (status) {
+      status.textContent = "Request sent. I will reply soon.";
+    }
+  } catch (error) {
+    problemForm.classList.add("is-error");
+
+    if (status) {
+      status.textContent = "Could not send. Please email me directly.";
+    }
+  } finally {
+    problemForm.classList.remove("is-sending");
+
+    if (submitButton) {
+      submitButton.textContent = "Send Request";
+      submitButton.disabled = false;
+    }
+  }
+});
+
 const sectionObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -223,7 +276,7 @@ if (!prefersReducedMotion) {
     });
   });
 
-  document.querySelectorAll(".project-card, .skill-card, .timeline-item").forEach((item) => {
+  document.querySelectorAll(".project-card, .skill-card, .timeline-item, .problem-form").forEach((item) => {
     item.addEventListener("pointermove", (event) => {
       const rect = item.getBoundingClientRect();
       const x = ((event.clientX - rect.left) / rect.width) * 100;

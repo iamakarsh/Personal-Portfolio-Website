@@ -280,18 +280,72 @@
       </section>
 
       <section class="section contact" id="contact">
-        <div class="contact-card reveal">
-          <p class="kicker">Contact</p>
-          <h2>Let's connect and build something useful.</h2>
-          <p>
-            I am based in Greater Noida, Uttar Pradesh and open to internships, collaborative
-            projects, and learning-focused development opportunities.
-          </p>
-          <div class="contact-links">
-            <a href="mailto:akarshpratapsingh9@gmail.com">akarshpratapsingh9@gmail.com</a>
-            <a href="https://www.linkedin.com/in/akarsh-pratap-singh-0b0142295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">linkedin.com/in/akarsh-pratap-singh</a>
-            <a href="https://github.com/iamakarsh" target="_blank" rel="noreferrer">github.com/iamakarsh</a>
+        <div class="contact-layout">
+          <div class="contact-card reveal">
+            <p class="kicker">Contact</p>
+            <h2>Tell me your problem. I will help shape the solution.</h2>
+            <p>
+              Share a website idea, AI/ML task, Java project, bug, or collaboration request.
+              I am based in Greater Noida and open to internships, freelance-style projects,
+              and learning-focused development opportunities.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:akarshpratapsingh9@gmail.com">akarshpratapsingh9@gmail.com</a>
+              <a href="https://www.linkedin.com/in/akarsh-pratap-singh-0b0142295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">linkedin.com/in/akarsh-pratap-singh</a>
+              <a href="https://github.com/iamakarsh" target="_blank" rel="noreferrer">github.com/iamakarsh</a>
+            </div>
           </div>
+
+          <form class="problem-form reveal" action="https://formspree.io/f/mwvzkrjo" method="POST">
+            <input type="hidden" name="_subject" value="New Portfolio Project Request" />
+
+            <div class="form-grid">
+              <label class="form-field">
+                <span>Your Name</span>
+                <input type="text" name="name" placeholder="Enter your name" required />
+              </label>
+
+              <label class="form-field">
+                <span>Your Email</span>
+                <input type="email" name="email" placeholder="Enter your email" required />
+              </label>
+            </div>
+
+            <div class="form-grid">
+              <label class="form-field">
+                <span>Project Type</span>
+                <select name="project_type" required>
+                  <option value="">Select type</option>
+                  <option value="Website Development">Website Development</option>
+                  <option value="AI / ML Project">AI / ML Project</option>
+                  <option value="Java Project">Java Project</option>
+                  <option value="Bug Fix">Bug Fix</option>
+                  <option value="Collaboration">Collaboration</option>
+                  <option value="Other">Other</option>
+                </select>
+              </label>
+
+              <label class="form-field">
+                <span>Timeline</span>
+                <select name="timeline">
+                  <option value="Flexible">Flexible</option>
+                  <option value="This Week">This Week</option>
+                  <option value="This Month">This Month</option>
+                  <option value="Urgent">Urgent</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="form-field">
+              <span>Problem / Message</span>
+              <textarea name="message" rows="6" placeholder="Describe your idea, issue, or project requirement..." required></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button class="btn primary magnetic" type="submit">Send Request</button>
+              <p class="form-status" aria-live="polite"></p>
+            </div>
+          </form>
         </div>
       </section>
     </main>
