@@ -1034,6 +1034,7 @@ body.light-mode .project-grid {
 }
 
 .form-field {
+  position: relative;
   display: grid;
   gap: 8px;
 }
@@ -1055,6 +1056,29 @@ body.light-mode .project-grid {
   background: rgba(255, 255, 255, 0.07);
   color: var(--text);
   transition: border-color 180ms ease, background 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.form-field select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, currentColor 50%),
+    linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position:
+    calc(100% - 21px) 50%,
+    calc(100% - 15px) 50%;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.form-field select option {
+  background: #101322;
+  color: #f8fafc;
+}
+
+body.light-mode .form-field select option {
+  background: #ffffff;
+  color: #111827;
 }
 
 body.light-mode .form-field input,
