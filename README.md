@@ -1,43 +1,70 @@
 # Personal Portfolio Website
 
-A modern, responsive, and interactive personal portfolio website for **Akarsh Pratap Singh**, a B.Tech CSE (AI) student. The website highlights my skills, projects, education, experience, resume, and contact links in a clean animated interface.
+A modern, responsive, and interactive portfolio website for **Akarsh Pratap Singh**, a B.Tech Computer Science Engineering student specializing in Artificial Intelligence. This portfolio showcases my projects, technical skills, education, experience, resume, and contact details with a smooth and visually engaging user interface.
 
 ## Live Demo
 
-Add your deployed link here:
+[View Portfolio Website](https://iamakarsh.github.io/Personal-Portfolio-Website/)
+
+## Preview
+
+![Portfolio Preview](assets/projects/face-recognition.png)
+
+## Features
+
+- Fully responsive design for desktop, tablet, and mobile
+- Dark and light mode toggle
+- Smooth scrolling navigation
+- Animated typing effect for roles
+- Interactive horizontal project carousel
+- Project cards with modern preview images
+- Hover effects on buttons, skills, cards, and links
+- Scroll-based reveal animations
+- Animated canvas background
+- Resume download option
+- Clean contact section with GitHub, LinkedIn, and email
+
+## Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript
+- GitHub Pages
+
+## Website Sections
+
+- Home
+- About
+- Projects
+- Skills
+- Education & Experience
+- Contact
+
+## Projects Showcased
+
+### Face Recognition System
+
+A real-time face recognition project using Python, OpenCV, and machine learning concepts.
+
+### Appointy - Doctor Appointment System
+
+A MERN stack doctor appointment booking application with role-based access for patients, doctors, and admins.
+
+### Smart Loading Vehicle System
+
+A Java-based logistics project designed to reduce empty return trips by assigning return-trip cargo to delivery vehicles.
+
+### Bus Management System
+
+A Java OOP-based management system for handling bus records, routes, and operational details.
+
+### Bank Management System
+
+A Java-based banking workflow project for account and transaction-style operations.
+
+## Folder Structure
 
 ```text
-https://your-github-pages-link.com
-Features
-Modern responsive UI
-Dark and light mode toggle
-Smooth scrolling navigation
-Animated typing effect
-Interactive project carousel
-Project cards with preview images
-Hover effects and reveal animations
-Resume download button
-Contact section with LinkedIn, GitHub, and email
-Fully built with HTML, CSS, and JavaScript
-Tech Stack
-HTML5
-CSS3
-JavaScript
-GitHub Pages for deployment
-Sections
-Home
-About
-Projects
-Skills
-Education & Experience
-Contact
-Projects Included
-Face Recognition System
-Appointy - Doctor Appointment System
-Smart Loading Vehicle System
-Bus Management System
-Bank Management System
-Folder Structure
 Personal-Portfolio-Website/
 │
 ├── index.html
@@ -56,16 +83,13 @@ Personal-Portfolio-Website/
 │       └── smart-loading-vehicle.png
 │
 └── README.md
-
 Deployment
-deployed link must be showing in deployed tab
+This website is deployed using GitHub Pages.
 
-Go to repository Settings.
-Open Pages.
-Select Deploy from a branch.
-Choose branch main.
-Select folder /root.
-Save the settings.
+Deployment URL:
+
+https://iamakarsh.github.io/Personal-Portfolio-Website/
+
 Contact
 Akarsh Pratap Singh
 
