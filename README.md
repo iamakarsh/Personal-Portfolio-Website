@@ -80,16 +80,16 @@ Personal-Portfolio-Website/
 │       └── smart-loading-vehicle.png
 │
 └── README.md
-Deployment
-This website is deployed using GitHub Pages.
+```
 
-Deployment URL:
+**Deployment URL:**  
+[https://iamakarsh.github.io/Personal-Portfolio-Website/](https://iamakarsh.github.io/Personal-Portfolio-Website/)
 
-https://iamakarsh.github.io/Personal-Portfolio-Website/
+## Contact
 
-Contact
-Akarsh Pratap Singh
+**Akarsh Pratap Singh**
 
-GitHub: github.com/iamakarsh
-LinkedIn: linkedin.com/in/akarsh-pratap-singh
-Email: akarshpratapsingh9@gmail.com
+- **GitHub:** [github.com/iamakarsh](https://github.com/iamakarsh)
+- **LinkedIn:** [linkedin.com/in/akarsh-pratap-singh](https://www.linkedin.com/in/akarsh-pratap-singh-0b0142295)
+- **Email:** [akarshpratapsingh9@gmail.com](mailto:akarshpratapsingh9@gmail.com)
+
