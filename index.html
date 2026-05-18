@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akarsh Pratap Singh | B.Tech CSE Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor-light" aria-hidden="true"></div>
+    <canvas id="network" aria-hidden="true"></canvas>
+
+    <header class="header">
+      <a class="logo" href="#home" aria-label="Akarsh portfolio home">
+        <span>AP</span>
+        <strong>Akarsh</strong>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle magnetic" type="button" aria-label="Switch to light mode" aria-pressed="false">
+        <span class="theme-icon">☀</span>
+        <span class="theme-text">Light</span>
+      </button>
+      <button class="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="kicker reveal">Hi, I'm</p>
+          <h1 class="reveal">Akarsh Pratap Singh</h1>
+          <h2 class="reveal">B.Tech CSE (AI) Student & Aspiring AI Engineer</h2>
+          <p class="role-line reveal">
+            I am a <span class="typed-role" aria-live="polite"></span><span class="typing-caret" aria-hidden="true"></span>
+          </p>
+          <p class="lead reveal">
+            I build practical web and AI-focused projects using Java, Python, JavaScript,
+            React, Node.js, SQL, and machine learning fundamentals.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="btn primary magnetic" href="#projects">View Projects</a>
+            <a class="btn secondary magnetic" href="assets/AkarshResume.pdf" download>Download CV</a>
+          </div>
+          <div class="socials reveal" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/akarsh-pratap-singh-0b0142295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/iamakarsh" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="mailto:akarshpratapsingh9@gmail.com">Email</a>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="profile-frame">
+            <img src="assets/akarsh-photo.jpg" alt="Portrait of Akarsh Pratap Singh" />
+            <span class="orbit-dot dot-a"></span>
+            <span class="orbit-dot dot-b"></span>
+            <span class="orbit-dot dot-c"></span>
+          </div>
+          <div class="status-card">
+            <span>Currently</span>
+            <strong>Open to internships, AI/ML projects, and full-stack collaborations</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats strip" aria-label="Highlights">
+        <article class="reveal">
+          <strong data-count="84" data-decimal="true">0</strong>
+          <span>CGPA</span>
+        </article>
+        <article class="reveal">
+          <strong data-count="500" data-suffix="+">0</strong>
+          <span>DSA problems solved</span>
+        </article>
+        <article class="reveal">
+          <strong data-count="30">0</strong>
+          <span>Top SIH rank</span>
+        </article>
+        <article class="reveal">
+          <strong data-count="2">0</strong>
+          <span>Internships</span>
+        </article>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-title reveal">
+          <p class="kicker">Brief Overview</p>
+          <h2>Computer Science student focused on AI, full-stack development, and problem solving.</h2>
+        </div>
+        <div class="about-grid">
+          <p class="reveal">
+            I am pursuing B.Tech in Computer Science with specialization in Artificial Intelligence at
+            Galgotias University. My work combines MERN stack development, Java and Python programming,
+            database systems, and machine learning workflows.
+          </p>
+          <div class="quick-list reveal">
+            <span>Java</span>
+            <span>Python</span>
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>MySQL</span>
+            <span>TensorFlow/Keras</span>
+            <span>Scikit-learn</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-title reveal">
+          <p class="kicker">Projects</p>
+          <h2>Selected academic and self-initiated work.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card tilt reveal">
+            <div class="project-art face">
+              <img src="assets/projects/face-recognition.png" alt="Face Recognition System project preview" loading="lazy" />
+            </div>
+            <div class="project-content">
+              <p>Python, OpenCV, Machine Learning</p>
+              <h3>Face Recognition System</h3>
+              <ul>
+                <li>Implemented a real-time face recognition pipeline using OpenCV and ML.</li>
+                <li>Processed image data and trained recognition models for better detection reliability.</li>
+                <li>Demonstrated accurate face identification across multiple test inputs.</li>
+              </ul>
+              <a href="https://github.com/iamakarsh/face-recognization" target="_blank" rel="noreferrer">GitHub -></a>
+            </div>
+          </article>
+
+          <article class="project-card tilt reveal">
+            <div class="project-art appointy">
+              <img src="assets/projects/appointy.png" alt="Appointy doctor appointment system project preview" loading="lazy" />
+            </div>
+            <div class="project-content">
+              <p>MERN Stack</p>
+              <h3>Appointy - Doctor Appointment System</h3>
+              <ul>
+                <li>Full-stack app for booking doctor appointments through a patient-friendly interface.</li>
+                <li>Role-based authentication for patient, doctor, and admin access using JWT.</li>
+                <li>Responsive React frontend for better usability and accessibility.</li>
+              </ul>
+              <a href="https://github.com/iamakarsh/Appointy---Doctor-Appointment-Web-App" target="_blank" rel="noreferrer">GitHub -></a>
+            </div>
+          </article>
+
+          <article class="project-card tilt reveal">
+            <div class="project-art cargo">
+              <img src="assets/projects/smart-loading-vehicle.png" alt="Smart Loading Vehicle System project preview" loading="lazy" />
+            </div>
+            <div class="project-content">
+              <p>Java, OOP, File Handling</p>
+              <h3>Smart Loading Vehicle System</h3>
+              <ul>
+                <li>Logistics management program to assign return-trip cargo to delivery vehicles.</li>
+                <li>Designed to reduce empty return trips in simulated route scenarios.</li>
+                <li>Built with object-oriented Java and file-based data handling.</li>
+              </ul>
+              <a href="https://github.com/iamakarsh/SIH-CargoConnect" target="_blank" rel="noreferrer">GitHub -></a>
+            </div>
+          </article>
+
+          <article class="project-card tilt reveal">
+            <div class="project-art bus">
+              <img src="assets/projects/bus-management.png" alt="Bus Management System project preview" loading="lazy" />
+            </div>
+            <div class="project-content">
+              <p>Java, OOP, Console Application</p>
+              <h3>Bus Management System</h3>
+              <ul>
+                <li>Created a management system for bus records, routes, and operational details.</li>
+                <li>Applied object-oriented programming principles to organize core features clearly.</li>
+                <li>Focused on simple data flow, maintainable structure, and practical admin use cases.</li>
+              </ul>
+              <a href="https://github.com/iamakarsh/Bus-Management-System" target="_blank" rel="noreferrer">GitHub -></a>
+            </div>
+          </article>
+
+          <article class="project-card tilt reveal">
+            <div class="project-art bank">
+              <img src="assets/projects/bank-management.png" alt="Bank Management System project preview" loading="lazy" />
+            </div>
+            <div class="project-content">
+              <p>Java, OOP, Banking Logic</p>
+              <h3>Bank Management System</h3>
+              <ul>
+                <li>Built a banking workflow project for account and transaction-style operations.</li>
+                <li>Used structured Java logic to model common banking management tasks.</li>
+                <li>Practiced modular programming, validation thinking, and command-based interaction.</li>
+              </ul>
+              <a href="https://github.com/iamakarsh/Bank-Management-System" target="_blank" rel="noreferrer">GitHub -></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section-title reveal">
+          <p class="kicker">Skills</p>
+          <h2>Technologies I use to build and learn.</h2>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card reveal">
+            <span>01</span>
+            <h3>Languages</h3>
+            <p>Java, Python, JavaScript</p>
+          </article>
+          <article class="skill-card reveal">
+            <span>02</span>
+            <h3>Frontend</h3>
+            <p>React.js, HTML, CSS, Bootstrap, Tailwind CSS</p>
+          </article>
+          <article class="skill-card reveal">
+            <span>03</span>
+            <h3>Backend & Databases</h3>
+            <p>Node.js, Express, MongoDB, MySQL</p>
+          </article>
+          <article class="skill-card reveal">
+            <span>04</span>
+            <h3>AI/ML Libraries</h3>
+            <p>NumPy, Pandas, Scikit-learn, TensorFlow/Keras</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience" id="experience">
+        <div class="section-title reveal">
+          <p class="kicker">Education & Experience</p>
+          <h2>Learning path, internships, certificates, and achievements.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span>2023 - 2026</span>
+            <h3>B.Tech in Computer Science (A.I.)</h3>
+            <p>Galgotias University | CGPA: 8.4/10</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>Jul 2025 - Aug 2025</span>
+            <h3>Web Development Intern</h3>
+            <p>Prodigy Infotech | Built responsive interfaces with HTML, CSS, JavaScript, and modern UI practices.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>Sep 2023 - Oct 2023</span>
+            <h3>AI-ML Virtual Intern</h3>
+            <p>EduSkills Google AI/ML Program | Practiced supervised and unsupervised ML workflows in Python.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>2024 - 2025</span>
+            <h3>Smart India Hackathon</h3>
+            <p>Secured Top 30 position at college level in SIH 2024 and 2025.</p>
+          </article>
+        </div>
+
+        <div class="mini-panels">
+          <article class="reveal">
+            <h3>Certificates</h3>
+            <p>Web Development MERN, DSA, DBMS by Oracle Academy, Python Programming by GUVI.</p>
+          </article>
+          <article class="reveal">
+            <h3>Soft Skills</h3>
+            <p>Teamwork, communication, problem-solving, and leadership.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-card reveal">
+          <p class="kicker">Contact</p>
+          <h2>Let's connect and build something useful.</h2>
+          <p>
+            I am based in Greater Noida, Uttar Pradesh and open to internships, collaborative
+            projects, and learning-focused development opportunities.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:akarshpratapsingh9@gmail.com">akarshpratapsingh9@gmail.com</a>
+            <a href="https://www.linkedin.com/in/akarsh-pratap-singh-0b0142295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">linkedin.com/in/akarsh-pratap-singh</a>
+            <a href="https://github.com/iamakarsh" target="_blank" rel="noreferrer">github.com/iamakarsh</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 Akarsh Pratap Singh</span>
+      <a href="#home">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
