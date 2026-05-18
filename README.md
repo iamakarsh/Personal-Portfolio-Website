@@ -6,9 +6,6 @@ A modern, responsive, and interactive portfolio website for **Akarsh Pratap Sing
 
 [View Portfolio Website](https://iamakarsh.github.io/Personal-Portfolio-Website/)
 
-## Preview
-
-![Portfolio Preview](assets/projects/face-recognition.png)
 
 ## Features
 
